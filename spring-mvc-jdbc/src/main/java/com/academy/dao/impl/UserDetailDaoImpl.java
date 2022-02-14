@@ -18,7 +18,7 @@ import com.academy.rowmapper.UserDetailRowMapper;
  */
 public class UserDetailDaoImpl implements UserDetailDao {
 	
-	@Autowired
+	
 	private JdbcTemplate jdbcTemplate;
 	
 	/*

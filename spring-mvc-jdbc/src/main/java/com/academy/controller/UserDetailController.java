@@ -30,7 +30,7 @@ import com.academy.service.UserDetailService;
 @RequestMapping("/")
 public class UserDetailController {
 
-	@Autowired
+	
 	private UserDetailService userDetailService;
 
 	/*
@@ -48,9 +48,9 @@ public class UserDetailController {
 	 * This method will display the details of all users present in the table in the
 	 * users.jsp page
 	 */
-	
+	@RequestMapping()
 	public String getUsersDetails(ModelMap userModel) {
-		userModel.addAttribute("userDetail", userDetailService.getAllUserDetail());
+		
 		return "users";
 	}
 
@@ -85,7 +85,7 @@ public class UserDetailController {
 	 * will be displayed (Whether deletion is successful or not)
 	 */
 	@RequestMapping()
-	public String deleteUser(@PathVariable("id") int id, ModelMap userModel) {
+	public String deleteUser() {
 		
 		return "users";
 	}
@@ -95,7 +95,7 @@ public class UserDetailController {
 	 * will be updated is displayed
 	 */
 	@RequestMapping()
-	public String updatePage(@PathVariable("id") int id, ModelMap userModel) {
+	public String updatePage() {
 		
 		return "update";
 	}

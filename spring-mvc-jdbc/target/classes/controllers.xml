@@ -9,17 +9,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 	<import resource="classpath:spring-config.xml" />
-	<!-- Scan the package where Spring Controllers are placed -->
-	<context:component-scan
-		base-package="" />
-	<!-- Resolves logical String-based view names to actual View types -->
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass"
-			value="org.springframework.web.servlet.view.JstlView" />
-		<!-- Where pages are kept -->
-		<property name="prefix" value="" />
-		<!-- What is the page extension -->
-		<property name="suffix" value="" />
-	</bean>
+	
 </beans>
