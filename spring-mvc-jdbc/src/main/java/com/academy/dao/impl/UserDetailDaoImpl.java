@@ -24,7 +24,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	/*
 	 * This method will retrieve the user detail based on the id being provided. 
 	 */
-	@Transactional
+	
 	public UserDetail getUserDetail(int id) {
 		
 	}
@@ -32,7 +32,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	/*
 	 * This method retrieves the details of all user from the database
 	 */
-	@Transactional
+	
 	public List<UserDetail> getAllUserDetail() {
 		
 	}
@@ -40,7 +40,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	/*
 	 * This method adds a new user to the table user_detail
 	 */
-	@Transactional
+	
 	public int addUserDetail(UserDetail userDetail) {
 		SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate);
 		simpleJdbcInsert.withTableName().usingGeneratedKeyColumns("id");
@@ -54,7 +54,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	/* 
 	 * This method is used to update the details of a user. The user id will be used to get the user whose details will be updated
 	 */
-	@Transactional
+	
 	public int updateUserDetail(UserDetail userDetail) {
 		
 	}
@@ -62,7 +62,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 	/*
 	 * This method is used to delete a user. The user id will be used to delete the particular user
 	 */
-	@Transactional
+	
 	public int deleteUserDetail(int id) {
 		
 	}
