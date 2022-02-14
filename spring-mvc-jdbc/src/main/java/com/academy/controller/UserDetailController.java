@@ -118,6 +118,11 @@ public class UserDetailController {
 	 * 
 	 */
 	@ExceptionHandler(IllegalArgumentException.class)
+	  public ModelAndView handleIOException(){
+	    ModelAndView mv = new ModelAndView();
+	    
+	    return mv;
+	  }
 	  
 
 }
